@@ -1,0 +1,21 @@
+<html>
+    <head>
+  
+    </head>
+    <body>
+        <input id ="username" type="text" placeholder="username">
+        <input id ="password" type="text"placeholder="password">
+
+        <button onclick="next()">next</button>
+        <script>
+            function next(){
+            var uname="rakesh";
+            var pass="rakesh@";
+            var username=document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+             uname == username && pass == password? console.log("login success"): console.log("loginfailed");
+            }
+
+        </script>
+    </body>
+</html>

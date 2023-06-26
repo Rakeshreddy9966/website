@@ -1,0 +1,141 @@
+Data Types:
+
+
+A datatype represents the type of data stored in a variable. Based on 
+data type, the memory manager allocates the memory for the data. 
+
+
+syntax: 
+
+      var var_name =value 
+
+      The datatype of a variable is decided based on the value that is stored. 
+
+
+In JS, we have 2 types of datatypes, 
+
+1. Primitive Types :
+
+    number, boolean, string
+
+
+    number:  number type is considered for any type of number in JS. 
+
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        var a = 100;
+        console.log(typeof a);
+        var rating = 4.14;
+        console.log(typeof rating);
+        function checkEligibility(age) {
+            if (typeof age == "number") {
+                if (age >= 18) {
+                    console.log("eligible for vote");
+                }
+                else {
+                    console.log("not eligible for vote")
+                }
+            }
+            else {
+                console.log("invalid data input, please enter a number");
+            }
+        }
+        checkEligibility(true);
+
+
+    </script>
+
+</body>
+
+</html>
+
+
+boolean: 
+
+true or false
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        function f1(isDone) {
+            if (typeof isDone == "boolean") {
+                if (isDone == false) {
+                    console.log("Work is not done yet");
+                }
+                else {
+                    console.log("work is done")
+                }
+            }
+            else {
+                console.log("invalid input");
+            }
+        }
+        f1("true");
+    </script>
+
+</body>
+</html>
+
+2. Non Primitive Types
+
+      arrays,objects
+
+
+Arrays:
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <input type="text" size=40 id="email" placeholder="enter emailid">
+
+    <button onclick="next()">Next</button>
+
+    <script>
+
+        var users = ["kiran", "rajesh", "nikhil"];
+        console.log(users);
+        // console.log(users[0]);
+        // console.log(users[1]);
+        // console.log(users[2]);
+        // console.log(users[3]);
+        // users[100] = 900;
+        // console.log(users);
+    </script>
+</body>
+
+</html>
+
+
+JS Objects:  An object is a programmatic representation of a realtime object. 
+
+syntax: 
+
+var obj = {
+     key: value, 
+     .
+     .
+
+}
+
+keys must be unqiue and expected to be Strings. 
+
+Values need not to be unique, can be of any datatype.
+
+

@@ -1,0 +1,28 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+
+        var a = 100;
+        console.log(typeof a);
+        var rating = 4.14;
+        console.log(typeof rating);
+        function checkEligibility(age) {
+            if (typeof age == "number") {
+                if (age >= 18) {
+                    console.log("eligible for vote");
+                }
+                else {
+                    console.log("not eligible for vote")
+                }
+            }
+            else {
+                console.log("invalid data input, please enter a number");
+            }
+        }
+        checkEligibility(15);
+        </script>
+    </body>
+</html>
